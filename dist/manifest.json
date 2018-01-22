@@ -1,0 +1,16 @@
+{
+	"name": "JIRA Detail View ScrollTop",
+	"description": "Clicking on a new JIRA issue will scroll the #ghx-detail-view to the top",
+	"icons": {
+	},
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"permissions": [
+	],
+  "content_scripts": [
+    {
+      "matches": ["http://jira.nuix.com/*", "https://jira.nuix.com/*"],
+      "js": ["contentscript.js"]
+    }
+  ]
+}
